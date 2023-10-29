@@ -65,11 +65,11 @@ class CustomButton extends StatelessWidget {
                       visible: loading,
                       child: CircularProgressIndicator(
                         strokeWidth: 4,
-                        color: Colors.white,
+                        color: AppColors.white,
                       ))
                   : Text(
                       buttonText,
-                      style: buttonTextStyle ?? TextStyle(fontSize: 14),
+                      style: buttonTextStyle ?? const TextStyle(fontSize: 14),
                     ),
             ),
     );
