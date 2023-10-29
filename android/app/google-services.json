@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "597207098201",
+    "project_id": "devathon786-f8ccd",
+    "storage_bucket": "devathon786-f8ccd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597207098201:android:760fefe1f481e7153d2248",
+        "android_client_info": {
+          "package_name": "com.example.devathon_smit_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp0qSsrVM4h6glYUCH6meobTO8-fF9Wk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
