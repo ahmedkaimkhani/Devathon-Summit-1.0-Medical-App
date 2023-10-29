@@ -1,3 +1,4 @@
+import 'package:devathon_smit_flutter/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -26,7 +27,7 @@ class CustomButton extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         elevation: 0,
-        backgroundColor: buttonColor ?? Colors.purple,
+        backgroundColor: buttonColor ?? AppColors.litePurple,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
             side: BorderSide(color: borderColor ?? Colors.transparent)),
@@ -40,7 +41,7 @@ class CustomButton extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 20),
                   child: Icon(
                     buttonIcon,
-                    color: Colors.white,
+                    color: AppColors.white,
                     size: 30,
                   ),
                 ),
