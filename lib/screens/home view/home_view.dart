@@ -1,5 +1,4 @@
 import 'package:devathon_smit_flutter/screens/all%20doctore/all_doctors.dart';
-import 'package:devathon_smit_flutter/screens/login&signup/widgets/custom_doctors.dart';
 import 'package:devathon_smit_flutter/screens/user/doctor_profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +14,6 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     final auth = FirebaseAuth.instance;
     return Scaffold(
-      drawer: Drawer(),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +27,7 @@ class HomeView extends StatelessWidget {
                       bottomLeft: Radius.circular(35),
                       bottomRight: Radius.circular(35))),
               child: Padding(
-                padding: EdgeInsets.only(top: 20, right: 20, left: 20),
+                padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -83,7 +81,7 @@ class HomeView extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           color: Colors.white),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     const Text(
