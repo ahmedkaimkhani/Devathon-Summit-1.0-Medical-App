@@ -1,4 +1,3 @@
-import 'package:devathon_smit_flutter/screens/home%20view/home_view.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
