@@ -36,7 +36,7 @@ class CustomDoctor extends StatelessWidget {
                     Column(
                       children: [
                         Text(name),
-                        SizedBox(
+                        const SizedBox(
                           height: 6,
                         ),
                         Text(subtile)

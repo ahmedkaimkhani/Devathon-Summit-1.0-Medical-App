@@ -33,10 +33,9 @@ class _SignupViewState extends State<SignupView> {
   String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
       return 'Please enter your email';
-    } else if (value.length < 6) {
-      return 'Password must be at least 6 character long';
+    } else {
+      return null;
     }
-    return null;
   }
 
   String? validatePassword(String? value) {
@@ -53,6 +52,7 @@ class _SignupViewState extends State<SignupView> {
       setState(() {
         loading = true;
       });
+
       UserCredential userCredential = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(
               email: emailController.text, password: passwordController.text);
@@ -64,6 +64,7 @@ class _SignupViewState extends State<SignupView> {
         'username': usernameController.text,
         'email': emailController.text,
       });
+
 //
       Utils().toastMessage('Account created successful', Colors.green);
       // Navigate to the home screen or any other screen

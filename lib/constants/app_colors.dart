@@ -11,5 +11,5 @@ class AppColors {
 
 class GreyShades {
   static Color liteRed = const Color(0xffFF9A9A);
-  static Color grey65 = const Color(0xff080C2FA6);
+  static Color grey65 = const Color(0xff080c2fa6);
 }
